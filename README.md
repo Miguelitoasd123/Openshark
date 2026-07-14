@@ -1,2 +1,123 @@
-# Openshark
-Terminal-based AI coding agent built with TypeScript + Ink. Multi-provider support (Anthropic, OpenAI, Gemini, xAI, DeepSeek, Mistral, OpenRouter, Ollama, LM Studio) with seamless switching. Features agentic tools, session persistence, a custom agent builder, and support for thinking/reasoning models. Built for developers who live in the terminal.
+<div align="center">
+
+# 🦈 OpenShark
+
+**Terminal AI coding agent — multi-provider, extensible, built for developers who live in the shell.**
+
+[🇧🇷 Português](#-português) · [🇺🇸 English](#-english)
+
+</div>
+
+---
+
+## 🇧🇷 Português
+
+### O que é
+
+**OpenShark** é um agente de IA para terminal, construído em TypeScript + Ink. Ele te dá um assistente de codificação completo direto no seu shell, com liberdade total pra escolher qual modelo de IA quer usar — sem ficar preso a um único provedor.
+
+### Principais Features
+
+- 🔌 **Multi-provider** — troque entre Anthropic, OpenAI, Gemini, xAI, DeepSeek, Mistral, OpenRouter, Ollama e LM Studio sem sair do terminal
+- 🛠️ **Ferramentas agênticas** — o agente executa ações reais (ler/editar arquivos, rodar comandos, navegar no projeto) em vez de só responder texto
+- 💾 **Persistência de sessão** — retome conversas de onde parou, sem perder contexto
+- 🧩 **Agent Builder customizado** — crie seus próprios agentes com comportamento, ferramentas e instruções específicas
+- 🧠 **Suporte a modelos de raciocínio** — funciona com modelos "thinking/reasoning", expondo o processo de pensamento quando disponível
+- 📦 **Skills** — pastas de instruções reutilizáveis que ensinam o agente a executar tarefas específicas sob demanda (mesmo conceito das Claude Skills: um `SKILL.md` com o passo a passo, carregado quando relevante)
+- 🔗 **Plugins** — pacotes instaláveis que agrupam skills, comandos e configurações em um único bundle, distribuídos via marketplace — sem precisar copiar e colar nada manualmente
+- 🖥️ Interface de terminal limpa e responsiva, construída com Ink (React para CLI)
+
+### Provedores suportados
+
+| Provedor | Status |
+|---|---|
+| Anthropic | ✅ |
+| OpenAI | ✅ |
+| Google Gemini | ✅ |
+| xAI (Grok) | ✅ |
+| DeepSeek | ✅ |
+| Mistral | ✅ |
+| OpenRouter | ✅ |
+| Ollama (local) | ✅ |
+| LM Studio (local) | ✅ |
+
+### Skills
+
+Skills são conjuntos de instruções que o agente carrega sob demanda pra executar uma tarefa específica — por exemplo, gerar um documento formatado, seguir um checklist de revisão de código, ou aplicar um padrão de projeto específico. Cada skill vive em sua própria pasta com um arquivo de instruções, e o agente decide quando usá-la com base no que você pediu.
+
+### Plugins
+
+Plugins empacotam múltiplas skills, comandos e configurações num único pacote instalável. Em vez de configurar tudo manualmente, você adiciona um marketplace (um repositório que cataloga plugins disponíveis) e instala o que quiser com um comando — como uma loja de apps para o seu agente.
+
+### Stack
+
+TypeScript · Ink (React para terminal)
+
+### Status
+
+🚧 Em desenvolvimento ativo — funcional e já em uso, com UI polida.
+
+### Contribuindo
+
+Issues e PRs são bem-vindos. Se você curte terminal, IA multi-provider ou dev tooling, dá uma olhada nas issues abertas.
+
+---
+
+## 🇺🇸 English
+
+### What it is
+
+**OpenShark** is a terminal-based AI coding agent, built with TypeScript + Ink. It gives you a full coding assistant right in your shell, with complete freedom to choose which AI model you want to use — no lock-in to a single provider.
+
+### Key Features
+
+- 🔌 **Multi-provider support** — switch between Anthropic, OpenAI, Gemini, xAI, DeepSeek, Mistral, OpenRouter, Ollama, and LM Studio without leaving the terminal
+- 🛠️ **Agentic tools** — the agent takes real actions (reading/editing files, running commands, navigating your project) instead of just replying with text
+- 💾 **Session persistence** — pick up conversations where you left off, no lost context
+- 🧩 **Custom Agent Builder** — build your own agents with specific behavior, tools, and instructions
+- 🧠 **Thinking/reasoning model support** — works with reasoning-capable models, surfacing the thinking process when available
+- 📦 **Skills** — reusable instruction folders that teach the agent how to execute specific tasks on demand (same concept as Claude Skills: a `SKILL.md` with step-by-step guidance, loaded when relevant)
+- 🔗 **Plugins** — installable packages that bundle skills, commands, and configuration into a single unit, distributed via marketplace — no manual copy-paste setup required
+- 🖥️ Clean, responsive terminal UI built with Ink (React for CLI)
+
+### Supported Providers
+
+| Provider | Status |
+|---|---|
+| Anthropic | ✅ |
+| OpenAI | ✅ |
+| Google Gemini | ✅ |
+| xAI (Grok) | ✅ |
+| DeepSeek | ✅ |
+| Mistral | ✅ |
+| OpenRouter | ✅ |
+| Ollama (local) | ✅ |
+| LM Studio (local) | ✅ |
+
+### Skills
+
+Skills are instruction sets the agent loads on demand to perform a specific task — for example, generating a formatted document, following a code review checklist, or applying a specific design pattern. Each skill lives in its own folder with an instructions file, and the agent decides when to use it based on what you asked for.
+
+### Plugins
+
+Plugins bundle multiple skills, commands, and configuration into a single installable package. Instead of setting everything up manually, you add a marketplace (a repository that catalogs available plugins) and install what you want with one command — like an app store for your agent.
+
+### Stack
+
+TypeScript · Ink (React for terminal)
+
+### Status
+
+🚧 Actively developed — functional and already in use, with a polished UI.
+
+### Contributing
+
+Issues and PRs are welcome. If you're into terminal tooling, multi-provider AI, or dev tooling in general, check out the open issues.
+
+---
+
+<div align="center">
+
+Built by **vthedev**
+
+</div>
